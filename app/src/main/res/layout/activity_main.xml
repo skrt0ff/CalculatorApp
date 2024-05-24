@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="10dp"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/mainText"
+        android:textAlignment="center"
+        android:textColor="#404040"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-light"
+        android:showText="true"
+        android:text="@string/darkThemeText"
+        android:textAlignment="viewEnd"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:minWidth="81dp"
+        android:text="@string/resultText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultText2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/equalsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equalsText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/resultText"
+        app:layout_constraintStart_toEndOf="@+id/resultText" />
+
+    <TextView
+        android:id="@+id/resultText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="231dp"
+        android:text="@string/resultText2"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="184dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/inputText"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/btn1"
+        app:layout_constraintBottom_toTopOf="@+id/boldCheckBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/boldCheckBox"
+        android:layout_width="116dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/boldText"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/italicCheckBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/italicCheckBox"
+        android:layout_width="116dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="205dp"
+        android:text="@string/italicText"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="84dp"
+        android:layout_height="472dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/bitRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:checked="true"
+            android:text="@string/bitText2" />
+
+        <RadioButton
+            android:id="@+id/KbitRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/kbitText2" />
+
+        <RadioButton
+            android:id="@+id/MbitRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/mbitText2" />
+
+        <RadioButton
+            android:id="@+id/GbitRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/gbitText2" />
+
+        <RadioButton
+            android:id="@+id/ByteRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/byteText2" />
+
+        <RadioButton
+            android:id="@+id/KBRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/KBText2" />
+
+        <RadioButton
+            android:id="@+id/MBRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/MBText2" />
+
+        <RadioButton
+            android:id="@+id/GBRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/GBText2" />
+
+        <RadioButton
+            android:id="@+id/TBRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/TBText2" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="80dp"
+        android:layout_height="472dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup2">
+
+        <RadioButton
+            android:id="@+id/bitRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:checked="true"
+            android:text="@string/bitText" />
+
+        <RadioButton
+            android:id="@+id/KbitRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:text="@string/kbitText" />
+
+        <RadioButton
+            android:id="@+id/MbitRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:text="@string/mbitText" />
+
+        <RadioButton
+            android:id="@+id/GbitRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:text="@string/gbitText" />
+
+        <RadioButton
+            android:id="@+id/ByteRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:text="@string/byteText" />
+
+        <RadioButton
+            android:id="@+id/KBRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:text="@string/KBText" />
+
+        <RadioButton
+            android:id="@+id/MBRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:text="@string/MBText" />
+
+        <RadioButton
+            android:id="@+id/GBRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:text="@string/GBText" />
+
+        <RadioButton
+            android:id="@+id/TBRadioButton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:text="@string/TBText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/fromText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/ToText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="79dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/imageDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_calculate_24" />
+
+    <Button
+        android:id="@+id/aboutApp"
+        android:layout_width="118dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:text="About The Program"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/italicCheckBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+    <string name="mainText">Information unit calculator</string>
+    <string name="darkThemeText">dark theme</string>
+    <string name="resultText">Here will be</string>
+    <string name="equalsText">=</string>
+    <string name="resultText2">The result</string>
+    <string name="inputText">Enter value</string>
+    <string name="btn1">calculate</string>
+    <string name="boldText">BOLD</string>
+    <string name="italicText">ITALIC</string>
+    <string name="bitText">bit</string>
+    <string name="kbitText">Kb</string>
+    <string name="mbitText">Mb</string>
+    <string name="gbitText">Gb</string>
+    <string name="byteText">Byte</string>
+    <string name="KBText">KB</string>
+    <string name="MBText">MB</string>
+    <string name="GBText">GB</string>
+    <string name="TBText">TB</string>
+    <string name="bitText2">to bit</string>
+    <string name="kbitText2">to Kb</string>
+    <string name="mbitText2">to Mb</string>
+    <string name="gbitText2">to Gb</string>
+    <string name="byteText2">to Byte</string>
+    <string name="KBText2">to KB</string>
+    <string name="MBText2">to MB</string>
+    <string name="GBText2">to GB</string>
+    <string name="TBText2">to TB</string>
+    <string name="fromText">From</string>
+    <string name="ToText">To</string>
+    <string name="imageDescription">An image with arithmetic signs (plus, minus, multiplication, equals), symbolizing a calculator</string>
+</resources>
